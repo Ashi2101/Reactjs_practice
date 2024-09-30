@@ -11,7 +11,7 @@ console.log("Clicked On Submit");
 
   return (
       <div>
-        <h1>Registration Formsd  </h1>
+        <h1>Registration Form  </h1>
 
         <div>Name: <input type="text" placeholder="Enter Your First Name"></input></div>
         <br></br>
