@@ -6,7 +6,7 @@ export class Form extends Component {
   render() {
     return (
       <div>
-        <h1>Registration Formsd  </h1>
+        <h1>Registration Form  </h1>
 
         <div>Name: <input type="text"></input></div>
         <br></br>
