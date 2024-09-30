@@ -1,14 +1,19 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-export class Form extends Component {
-  
+const Form = () => {
 
-  render() {
-    return (
+function formSubmit()
+{
+console.log("Clicked On Submit");
+
+}
+
+
+  return (
       <div>
         <h1>Registration Formsd  </h1>
 
-        <div>Name: <input type="text"></input></div>
+        <div>Name: <input type="text" placeholder="Enter Your First Name"></input></div>
         <br></br>
         <div>Email: <input type="text"></input></div>
         <br></br>
@@ -17,10 +22,11 @@ export class Form extends Component {
         <div>City: <input type="text"></input></div>
         <br></br>
         <div>Country: <select>
-            <option>India</option>
-            <option>Australia</option>
-            <option>America</option>
-            <option>Russia</option>
+        <option>-Select Country-</option>
+            <option value="india">India</option>
+            <option value="australia">Australia</option>
+            <option value="america">America</option>
+            <option value="russia">Russia</option>
         </select></div>
         <br></br>
         <div>Gender: <input type="radio"/>Male 
@@ -33,12 +39,12 @@ export class Form extends Component {
         <div>Address: <input type="text"></input></div>
         <br></br>
         
-        <div><button> Submit </button> 
+        <div><button onClick={formSubmit}> Submit </button> 
         <button>Clear</button></div>
 
       </div>
     )
   }
-}
+
 
 export default Form
