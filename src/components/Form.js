@@ -4,16 +4,19 @@ const Form = () => {
 
 function formSubmit()
 {
-console.log("Clicked On Submit");
-
+      console.log("Clicked On Submit");
+      const fname=document.getElementById("fName").value;
+if(! fname.length > 0)
+{
+  alert("Please enter first name");
+}
 }
 
 
   return (
       <div>
         <h1>Registration Form  </h1>
-
-        <div>Name: <input type="text" placeholder="Enter Your First Name"></input></div>
+        <div>Name: <input type="text" id="fName" placeholder="Enter Your First Name"></input></div>
         <br></br>
         <div>Email: <input type="text"></input></div>
         <br></br>
